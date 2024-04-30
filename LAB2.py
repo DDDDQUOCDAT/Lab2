@@ -20,13 +20,14 @@ def get_user_input():
 def calc_average_temperature(user_input):
     average=sum(user_input)/len(user_input)
     print("average =", average)
-    return average
+    return [average]
 
 def calc_min_max_temperature(user_input):
    min_num=min(user_input)
    max_num=max(user_input)
    print("max =", max_num)
    print("min =", min_num)
+   return [ min_num , max_num ]
 
 def find_median_temperature (user_input):
     sorted_input=sorted(user_input)
