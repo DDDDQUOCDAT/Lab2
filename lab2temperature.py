@@ -33,7 +33,9 @@ def find_median_temperature (user_input):
     sorted_input=sorted(user_input)
     median=statistics.median(sorted_input)
     print("median =", median)
+    return [median]
 
-main()
+if __name__=="__main__":
+    main()
 
   
